@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bill calculator</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.
-    min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
     <h1><span id="perc">Bill</span> Amount</h1>
@@ -17,7 +16,14 @@
       <p>Tip amount: <input id="tip" disabled="disabled" /></p>
       <!-- disabled means boolean attribute: user will not be insert or click on this input -->
       <p>Total: <input id="total" disabled="disabled" /></p>
-      <p><input id="addup" type="submit" value="Calculate" /></p>
+      <p>
+        <input
+          id="addup"
+          type="submit"
+          value="Calculate"
+          onclick="calculate()"
+        />
+      </p>
     </form>
 
     <script src="script.js"></script>
